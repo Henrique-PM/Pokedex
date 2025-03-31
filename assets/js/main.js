@@ -7,7 +7,7 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <li class="pokemon ${pokemon.type}">
+        <li class="pokemon ${pokemon.type}" onclick="selectPokemon(${pokemon.number})" >
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
@@ -21,6 +21,10 @@ function convertPokemonToLi(pokemon) {
             </div>
         </li>
     `
+}
+
+function selectPokemon(number) {
+    window.location.href = `pokemon-details.html?id=${number}`
 }
 
 function loadPokemonItens(offset, limit) {

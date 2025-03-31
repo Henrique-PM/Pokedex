@@ -4,15 +4,24 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-image: url("/assets/imagem/fundo.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
-
+h1{
+    color: rgb(218, 15, 15);
+    font-style: italic;
+    font-family: Verdana;
+}
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.77)
 }
+
 
 @media screen and (min-width: 992px) {
     .content {
